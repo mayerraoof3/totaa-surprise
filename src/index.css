@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  html, body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+}
+
+/* Custom Paper and Romantic Accents */
+.paper-texture {
+  background-color: #faf6ee;
+  background-image: radial-gradient(#ebe1ce 0.75px, transparent 0.75px), radial-gradient(#ebe1ce 0.75px, #faf6ee 0.75px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+}
+
+.subtle-grid {
+  background-size: 24px 24px;
+  background-image: linear-gradient(to right, rgba(251, 111, 146, 0.05) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(251, 111, 146, 0.05) 1px, transparent 1px);
+}
+
+/* 3D Flip Card Styles */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+/* Wax seal stamp style */
+.wax-seal {
+  background: radial-gradient(circle at 35% 35%, #e11d48, #9f1239, #881337);
+  box-shadow: 0 4px 12px rgba(159, 18, 57, 0.35), inset 0 2px 4px rgba(255, 255, 255, 0.3), inset 0 -2px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* Tape style for polaroids */
+.washi-tape {
+  background: rgba(255, 230, 235, 0.75);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  backdrop-filter: blur(2px);
+}
